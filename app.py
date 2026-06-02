@@ -137,6 +137,12 @@ with st.sidebar:
         "BRK-B", "NFLX", "ADBE", "CRM", "AMD", "INTC", "QCOM", "TXN",
         # ETFs (for testing)
         "SPY", "QQQ", "DIA",
+        #NSE
+        # Indian stocks (NSE)
+    "RELIANCE.NS", "HDFCBANK.NS", "INFY.NS", "TCS.NS", "ICICIBANK.NS",
+    "WIPRO.NS", "AXISBANK.NS", "BAJFINANCE.NS", "SBIN.NS", "KOTAKBANK.NS",
+    "TATAMOTORS.NS", "ADANIENT.NS", "MARUTI.NS", "SUNPHARMA.NS", "ITC.NS",
+    "ENGINEERS-INDIA.NS", "ONGC.NS", "NTPC.NS", "POWERGRID.NS", "COALINDIA.NS",
     ]
 
     ticker_input = st.selectbox(
@@ -153,7 +159,7 @@ with st.sidebar:
             "Custom ticker",
             value            = "",
             max_chars        = 10,
-            placeholder      = "e.g. TSM, BABA, SHOP",
+            placeholder = "e.g. TSM, BABA, RELIANCE.NS, HDFCBANK.NS",
             label_visibility = "collapsed",
         ).strip().upper()
         if custom_ticker:
